@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks the Day Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 1em;
+        }
+
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .features h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            padding: 8px 0;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+
+        .features li:before {
+            content: "✓";
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📅 Marks the Day Events</h1>
+        <p class="subtitle">Your Personal Event Calendar</p>
+        
+        <p class="description">
+            Welcome to Marks the Day Events! Keep track of all your important dates, 
+            celebrations, and special moments in one beautiful place.
+        </p>
+
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Easy event management</li>
+                <li>Beautiful calendar view</li>
+                <li>Never miss important dates</li>
+                <li>Share events with friends</li>
+            </ul>
+        </div>
+
+        <a href="#" class="cta-button">Get Started</a>
+
+        <footer>
+            <p>&copy; 2026 Marks the Day Events. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
