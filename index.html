@@ -26,7 +26,7 @@
     --text-light: #8B7D6B;
   }
 
-  html { scroll-behavior: smooth; font-size: 16px; }
+  html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; max-width: 100%; }
 
   body {
     font-family: 'Jost', sans-serif;
@@ -148,7 +148,7 @@
   .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1800&auto=format&fit=crop&q=80');
+    background-image: url('Photos%20for%20Website/Caity%20%26%20Brandon/nashville-wedding-photographer-the-mills-lebanon-11.jpg');
     background-size: cover;
     background-position: center 30%;
     transform: scale(1.05);
@@ -182,7 +182,8 @@
     letter-spacing: 0.35em;
     text-transform: uppercase;
     color: var(--champagne-light);
-    margin-bottom: 28px;
+    margin-bottom: 36px;
+    transform: translateY(-8px);
     display: block;
   }
   .hero-headline {
@@ -490,13 +491,11 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.8s ease, filter 0.8s ease;
+    transition: transform 0.8s ease;
     min-height: 320px;
-    /* Warm editorial color correction — matches champagne/ivory palette */
-    filter: sepia(0.10) saturate(0.90) brightness(1.04) contrast(1.04);
   }
   .wedding-card:first-child img { min-height: 700px; }
-  .wedding-card:hover img { transform: scale(1.04); filter: sepia(0.04) saturate(1.0) brightness(1.06) contrast(1.05); }
+  .wedding-card:hover img { transform: scale(1.04); }
   .wedding-card-overlay {
     position: absolute;
     inset: 0;
@@ -855,11 +854,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease, filter 0.6s ease;
-    /* Warm editorial color correction — unified champagne tone */
-    filter: sepia(0.12) saturate(0.88) brightness(1.05) contrast(1.05);
+    transition: transform 0.6s ease;
   }
-  .gallery-item:hover img { transform: scale(1.08); filter: sepia(0.05) saturate(1.0) brightness(1.07) contrast(1.06); }
+  .gallery-item:hover img { transform: scale(1.08); }
   .gallery-item-overlay {
     position: absolute;
     inset: 0;
@@ -1446,8 +1443,8 @@
     <a href="#inquiry" class="btn-dark">Begin Planning Together</a>
   </div>
   <div class="intro-right reveal reveal-delay-2">
-    <img class="intro-img-main" src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&auto=format&fit=crop&q=80" alt="Elegant wedding reception">
-    <img class="intro-img-accent" src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?w=400&auto=format&fit=crop&q=80" alt="Wedding flowers">
+    <img class="intro-img-main" src="Photos%20for%20Website/Jackie%20%26%20Trevor/LOSW_0926.jpeg" alt="Elegant wedding reception">
+    <img class="intro-img-accent" src="Photos%20for%20Website/Alea%20%26%20Danny/IMG_5904.JPEG" alt="Wedding flowers">
     <div class="intro-stat">
       <span class="num">4+</span>
       <span class="lbl">Years of Love<br>Stories</span>
@@ -1480,7 +1477,7 @@
   </div>
   <div class="weddings-grid">
     <div class="wedding-card reveal">
-      <img src="Website%20Favorites/Caity%20%26%20Brandon/nashville-wedding-photographer-the-mills-lebanon-11.jpg" alt="Caity & Brandon — The Mills, Lebanon">
+      <img src="Photos%20for%20Website/Caity%20%26%20Brandon/nashville-wedding-photographer-the-mills-lebanon-11.jpg" alt="Caity & Brandon — The Mills, Lebanon">
       <div class="wedding-card-overlay"></div>
       <div class="wedding-card-info">
         <span class="wedding-card-cat">Industrial Mill Romance</span>
@@ -1489,7 +1486,7 @@
       </div>
     </div>
     <div class="wedding-card reveal reveal-delay-1">
-      <img src="Website%20Favorites/Lex%20%26%20Tre/330450585_740322637528683_1382427610959742999_n.jpg" alt="Lexus & Tre — Woodland Wedding">
+      <img src="Photos%20for%20Website/Lex%20%26%20Tre/330450585_740322637528683_1382427610959742999_n.jpg" alt="Lexus & Tre — Woodland Wedding">
       <div class="wedding-card-overlay"></div>
       <div class="wedding-card-info">
         <span class="wedding-card-cat">Woodland Celebration</span>
@@ -1498,7 +1495,7 @@
       </div>
     </div>
     <div class="wedding-card reveal reveal-delay-2">
-      <img src="Website%20Favorites/Megan%20%26%20Dan/IMG_5900.JPEG" alt="Megan & Dan — Timeless Tennessee Wedding">
+      <img src="Photos%20for%20Website/Megan%20%26%20Dan/IMG_5900.JPEG" alt="Megan & Dan — Timeless Tennessee Wedding">
       <div class="wedding-card-overlay"></div>
       <div class="wedding-card-info">
         <span class="wedding-card-cat">Timeless Elegance</span>
@@ -1522,42 +1519,42 @@
       <span class="service-icon">✦</span>
       <h3>Full-Service Planning</h3>
       <p>Complete, start-to-finish wedding planning — from venue selection and vendor curation to timeline design and day-of coordination. You dream it; we build it.</p>
-      <a href="#inquiry" class="service-link">Learn More</a>
+      <a href="services/full-service-planning.html" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal reveal-delay-1">
       <span class="service-num">02</span>
       <span class="service-icon">❋</span>
       <h3>Wedding Design & Styling</h3>
       <p>Editorial-grade design that brings your aesthetic vision to life. Florals, tablescapes, lighting, and every detail curated with an artist's eye and a storyteller's heart.</p>
-      <a href="#inquiry" class="service-link">Learn More</a>
+      <a href="services/wedding-design.html" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal reveal-delay-2">
       <span class="service-num">03</span>
       <span class="service-icon">◈</span>
       <h3>Estate & Barn Weddings</h3>
       <p>Private properties and historic barns are our specialty. We handle every logistical layer of bringing a stunning event to a non-traditional venue.</p>
-      <a href="#inquiry" class="service-link">Learn More</a>
+      <a href="services/estate-barn-weddings.html" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal reveal-delay-1">
       <span class="service-num">04</span>
       <span class="service-icon">◇</span>
       <h3>Weekend Experiences</h3>
       <p>Rehearsal dinners, welcome parties, day-after brunches — we design the full weekend so your guests experience something beyond a single evening.</p>
-      <a href="#inquiry" class="service-link">Learn More</a>
+      <a href="services/weekend-experiences.html" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal reveal-delay-2">
       <span class="service-num">05</span>
       <span class="service-icon">✿</span>
       <h3>Partial Planning</h3>
       <p>Already have a vision but need an expert to bring it home? Our partial planning package steps in wherever you need us most.</p>
-      <a href="#inquiry" class="service-link">Learn More</a>
+      <a href="services/partial-planning.html" class="service-link">Learn More</a>
     </div>
     <div class="service-card reveal reveal-delay-3">
       <span class="service-num">06</span>
       <span class="service-icon">◉</span>
       <h3>Day-Of Coordination</h3>
       <p>Spend your wedding day entirely present. We manage every vendor, timeline, and unexpected moment — so you never have to.</p>
-      <a href="#inquiry" class="service-link">Learn More</a>
+      <a href="services/day-of-coordination.html" class="service-link">Learn More</a>
     </div>
   </div>
 </section>
@@ -1601,7 +1598,7 @@
   </div>
   <div class="venues-scroll">
     <div class="venue-card">
-      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&auto=format&fit=crop&q=80" alt="Barn venue">
+      <img src="Photos%20for%20Website/Caity%20%26%20Brandon/nashville-wedding-photographer-the-mills-lebanon-9.jpg" alt="Barn venue">
       <div class="venue-card-overlay"></div>
       <div class="venue-card-body">
         <span class="venue-tag">Barn & Farm</span>
@@ -1610,7 +1607,7 @@
       </div>
     </div>
     <div class="venue-card">
-      <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&auto=format&fit=crop&q=80" alt="Estate venue">
+      <img src="Photos%20for%20Website/Jackie%20%26%20Trevor/LOSW_0149.jpeg" alt="Estate venue">
       <div class="venue-card-overlay"></div>
       <div class="venue-card-body">
         <span class="venue-tag">Private Estate</span>
@@ -1619,7 +1616,7 @@
       </div>
     </div>
     <div class="venue-card">
-      <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&auto=format&fit=crop&q=80" alt="Mountain venue">
+      <img src="Photos%20for%20Website/Kenna%20%26%20Steven/IMG_5897.JPEG" alt="Mountain venue">
       <div class="venue-card-overlay"></div>
       <div class="venue-card-body">
         <span class="venue-tag">Mountain Ceremony</span>
@@ -1628,7 +1625,7 @@
       </div>
     </div>
     <div class="venue-card">
-      <img src="https://images.unsplash.com/photo-1501117716987-c8c394bb29df?w=600&auto=format&fit=crop&q=80" alt="Resort venue">
+      <img src="Photos%20for%20Website/Megan%20%26%20Dan/IMG_5899.JPEG" alt="Resort venue">
       <div class="venue-card-overlay"></div>
       <div class="venue-card-body">
         <span class="venue-tag">Luxury Resort</span>
@@ -1637,7 +1634,7 @@
       </div>
     </div>
     <div class="venue-card">
-      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&auto=format&fit=crop&q=80" alt="Garden venue">
+      <img src="Photos%20for%20Website/Alea%20%26%20Danny/IMG_5903.JPEG" alt="Garden venue">
       <div class="venue-card-overlay"></div>
       <div class="venue-card-body">
         <span class="venue-tag">Garden & Grounds</span>
@@ -1685,41 +1682,41 @@
   <div class="gallery-grid">
     <!-- Item 1 — hero, spans 2×2 -->
     <div class="gallery-item">
-      <img src="Website%20Favorites/Caity%20%26%20Brandon/nashville-wedding-photographer-the-mills-lebanon-9.jpg" alt="Caity & Brandon — First Dance">
+      <img src="Photos%20for%20Website/Caity%20%26%20Brandon/nashville-wedding-photographer-the-mills-lebanon-9.jpg" alt="Caity & Brandon — First Dance">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
     <div class="gallery-item">
-      <img src="Website%20Favorites/Alea%20%26%20Danny/IMG_5903.JPEG" alt="Alea & Danny">
+      <img src="Photos%20for%20Website/Alea%20%26%20Danny/IMG_5903.JPEG" alt="Alea & Danny">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
     <div class="gallery-item">
-      <img src="Website%20Favorites/Lex%20%26%20Tre/318090567_10225800033740394_8483836166781747595_n.jpg" alt="Lexus Bridal Portrait">
+      <img src="Photos%20for%20Website/Lex%20%26%20Tre/318090567_10225800033740394_8483836166781747595_n.jpg" alt="Lexus Bridal Portrait">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
     <!-- Item 4 — spans 2 columns -->
     <div class="gallery-item">
-      <img src="Website%20Favorites/Jackie%20%26%20Trevor/LOSW_0926.jpeg" alt="Jackie & Trevor — Sweetheart Table">
+      <img src="Photos%20for%20Website/Jackie%20%26%20Trevor/LOSW_0926.jpeg" alt="Jackie & Trevor — Sweetheart Table">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
     <div class="gallery-item">
-      <img src="Website%20Favorites/Jackie%20%26%20Trevor/LOSW_0149.jpeg" alt="Jackie — Bridal Moment">
+      <img src="Photos%20for%20Website/Jackie%20%26%20Trevor/LOSW_0149.jpeg" alt="Jackie — Bridal Moment">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
     <div class="gallery-item">
-      <img src="Website%20Favorites/Megan%20%26%20Dan/IMG_5899.JPEG" alt="Megan & Dan — Garden First Look">
+      <img src="Photos%20for%20Website/Megan%20%26%20Dan/IMG_5899.JPEG" alt="Megan & Dan — Garden First Look">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
     <div class="gallery-item">
-      <img src="Website%20Favorites/Alea%20%26%20Danny/IMG_5904.JPEG" alt="Alea & Danny — Beneath the Oak">
+      <img src="Photos%20for%20Website/Alea%20%26%20Danny/IMG_5904.JPEG" alt="Alea & Danny — Beneath the Oak">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
     <div class="gallery-item">
-      <img src="Website%20Favorites/Kenna%20%26%20Steven/IMG_5897.JPEG" alt="Kenna & Steven — Tennessee Country">
+      <img src="Photos%20for%20Website/Kenna%20%26%20Steven/IMG_5897.JPEG" alt="Kenna & Steven — Tennessee Country">
       <div class="gallery-item-overlay"><span>✦</span></div>
     </div>
   </div>
   <div class="gallery-follow">
-    <p>Follow our journey on Instagram <a href="#">@MarksTheDayEvents</a></p>
+    <p>Follow our journey on Instagram <a href="https://www.instagram.com/markstheday/" target="_blank" rel="noopener">@markstheday</a></p>
   </div>
 </section>
 
@@ -1732,15 +1729,15 @@
       <p>We would love to hear about your love story and how we can help bring your wedding vision to life. Fill out the form and we'll be in touch within 48 hours.</p>
       <div class="inquiry-contact-item">
         <span>✉</span>
-        <span>hello@markstheday.com</span>
+        <span>markstheday@yahoo.com</span>
       </div>
       <div class="inquiry-contact-item">
         <span>☎</span>
-        <span>(615) 555-0192</span>
+        <span>615-624-1655</span>
       </div>
       <div class="inquiry-contact-item">
         <span>◎</span>
-        <span>Franklin, Tennessee</span>
+        <span>Surrounding Nashville Tennessee area</span>
       </div>
     </div>
     <div class="inquiry-right reveal reveal-delay-1">
@@ -1784,10 +1781,10 @@
           <label>Budget Range</label>
           <select>
             <option value="">Select range</option>
-            <option>$25,000 – $50,000</option>
-            <option>$50,000 – $75,000</option>
-            <option>$75,000 – $100,000</option>
-            <option>$100,000+</option>
+            <option>$1,000 – $5,000</option>
+            <option>$5,000 – $15,000</option>
+            <option>$15,000 – $50,000</option>
+            <option>$50,000+</option>
           </select>
         </div>
       </div>
@@ -1807,10 +1804,8 @@
       <span class="logo">Marks the Day Events</span>
       <p>Tennessee's boutique wedding planning studio, dedicated to crafting celebrations that feel as timeless as the love they honor.</p>
       <div class="footer-social">
-        <a href="#" title="Instagram">IG</a>
-        <a href="#" title="Pinterest">PI</a>
-        <a href="#" title="Facebook">FB</a>
-        <a href="#" title="TikTok">TK</a>
+        <a href="https://www.instagram.com/markstheday/" title="Instagram" target="_blank" rel="noopener">IG</a>
+        <a href="https://www.facebook.com/people/Marks-the-Day-Events/61555815249671/" title="Facebook" target="_blank" rel="noopener">FB</a>
       </div>
     </div>
     <div class="footer-col">
@@ -1835,15 +1830,15 @@
     <div class="footer-col">
       <h4>Connect</h4>
       <ul>
-        <li><a href="mailto:hello@markstheday.com">hello@markstheday.com</a></li>
-        <li><a href="tel:6155550192">(615) 555-0192</a></li>
-        <li><a href="#">Franklin, Tennessee</a></li>
+        <li><a href="mailto:markstheday@yahoo.com">markstheday@yahoo.com</a></li>
+        <li><a href="tel:6156241655">615-624-1655</a></li>
+        <li><a href="#">Surrounding Nashville Tennessee area</a></li>
         <li><a href="#inquiry">Book a Consultation</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Marks the Day Events · All Rights Reserved · Franklin, Tennessee</p>
+    <p>© 2025 Marks the Day Events · All Rights Reserved · Surrounding Nashville Tennessee area</p>
     <a href="#home">Back to Top ↑</a>
   </div>
 </footer>
